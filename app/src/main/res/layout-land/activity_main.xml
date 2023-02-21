@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/main_text"
+        android:textSize="@dimen/text_xx_large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <Button
+            android:id="@+id/btn_toplanma"
+            android:layout_width="128dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="@dimen/space_x_large"
+            android:layout_marginTop="@dimen/space_4x_large"
+            android:backgroundTint="@color/btn_toplanma_clr"
+            android:text="@string/toplanmabtn_text"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+        <Button
+            android:id="@+id/btn_kan"
+            android:layout_width="128dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="@dimen/space_4x_large"
+            android:backgroundTint="@color/btn_kan_clr"
+            android:text="@string/kanbtn_text"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toEndOf="@+id/btn_toplanma"
+            app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+        <Button
+            android:id="@+id/btn_bagis"
+            android:layout_width="128dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="@dimen/space_4x_large"
+            android:backgroundTint="@color/btn_bagis_clr"
+            android:text="@string/bagisbtn_text"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toEndOf="@id/btn_kan"
+            app:layout_constraintTop_toBottomOf="@+id/textview" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_afad_ara"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/space_xx_large"
+        android:layout_marginBottom="@dimen/space_xx_large"
+        android:background="@drawable/bg_border_curved_radius"
+        android:padding="@dimen/space_medium"
+        android:src="@android:drawable/stat_sys_phone_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

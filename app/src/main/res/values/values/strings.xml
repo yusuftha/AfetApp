@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Afet</string>
+    <string name="main_text">Lütfen butonları kullanınız.</string>
+    <string name="toplanmabtn_text">Toplanma Alanları</string>
+    <string name="erzakbtn_text">Erzak Dağıtım</string>
+    <string name="kanbtn_text">Kan Bağışı Merkezleri</string>
+    <string name="vincbtn_text">Cinç Operatörleri</string>
+    <string name="bagisbtn_text">Bağış Yapınız</string>
+    <string name="son_depremler">Son Depremler</string>
+    <string name="yeni_site_text">Faydalı bir link ekleyebilirsiniz</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps_deprem">Map</string>
+
+
+
+</resources>

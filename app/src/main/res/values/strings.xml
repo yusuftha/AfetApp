@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" />
+    <string name="main_text">Lütfen Butonları Kullanın</string>
+    <string name="toplanmabtn_text">Toplanma Alanları</string>
+    <string name="erzakbtn_text">Erzak Toplama Alanları</string>
+    <string name="kanbtn_text">Kan Bağış Noktaları</string>
+    <string name="vincbtn_text">Vinç Oparatör Numaraları</string>
+    <string name="bagisbtn_text">Bağış Adresleri</string>
+    <string name="afad_text">Afad Bölge Numaraları</string>
+    <string name="afad_bagis_text">AFAD Bağış Adresi</string>
+    <string name="btn_adres_text">Adrese Git</string>
+    <string name="ahbap_bagis_text">Ahbap Bağış Adresi</string>
+</resources>

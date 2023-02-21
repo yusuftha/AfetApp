@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="88dp"
+
+    android:layout_marginStart="@dimen/margin_20dp"
+    android:layout_marginTop="@dimen/margin_8dp"
+    android:layout_marginEnd="@dimen/margin_20dp">
+
+    <TextView
+        android:id="@+id/deprem_mag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/margin_12dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/blue_corner"
+        android:gravity="center"
+        android:text="1.23"
+        android:textColor="@color/white"
+        android:textSize="@dimen/margin_16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+<!--    android:drawableEnd="@drawable/location"-->
+
+    <TextView
+        android:id="@+id/deprem_lokasyon"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_24dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:gravity="end"
+        android:text="HACIBEYLI-(NIGDE)"
+        android:textColor="@color/black"
+        android:textSize="@dimen/margin_20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/deprem_mag"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/deprem_lng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:text="boylam: 35.151"
+        android:textColor="@color/black"
+        android:textSize="@dimen/margin_12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deprem_lokasyon" />
+
+    <TextView
+        android:id="@+id/deprem_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginEnd="8dp"
+        android:text="enlem: 35.151"
+        android:textColor="@color/black"
+        android:textSize="@dimen/margin_12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/deprem_lng"
+        app:layout_constraintTop_toBottomOf="@id/deprem_lokasyon" />
+
+<!--    android:drawableEnd="@drawable/clook_deprem"-->
+    <TextView
+        android:id="@+id/deprem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+
+        android:gravity="center"
+        android:text="2021-09-22"
+        android:textColor="@color/black"
+        android:textSize="@dimen/margin_12dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/deprem_lng" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/black"
+        android:elevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/deprem_time"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
