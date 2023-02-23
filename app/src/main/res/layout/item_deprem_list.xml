@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,31 +13,30 @@
         android:id="@+id/deprem_mag"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_margin="@dimen/margin_xxxlarge"
-        android:layout_marginStart="120dp"
+        android:layout_margin="@dimen/margin_large"
         android:layout_marginTop="20dp"
         android:background="@drawable/blue_corner"
         android:gravity="center"
         android:text="1.23"
         android:textColor="@color/white"
-        android:textSize="@dimen/text_xxlarge"
+        android:textSize="@dimen/text_xlarge"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_weight="1" />
 
-<!--    android:drawableEnd="@drawable/location"-->
+    <!--    android:drawableEnd="@drawable/location"-->
 
     <TextView
         android:id="@+id/deprem_lokasyon"
         android:layout_width="0dp"
         android:layout_height="@dimen/margin_8xlarge"
         android:layout_marginStart="@dimen/margin_5xlarge"
-        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginTop="4dp"
         android:gravity="end"
         android:text="HACIBEYLI-(NIGDE)"
         android:textColor="@color/black"
-        android:textSize="@dimen/text_xxxlarge"
+        android:textSize="@dimen/text_xlarge"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/deprem_mag"
@@ -49,10 +47,9 @@
         android:id="@+id/deprem_lng"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_small"
         android:text="boylam: 35.151"
         android:textColor="@color/black"
-        android:textSize="@dimen/text_medium"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/deprem_lokasyon" />
@@ -61,26 +58,23 @@
         android:id="@+id/deprem_lat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginTop="@dimen/margin_small"
         android:layout_marginEnd="8dp"
         android:text="enlem: 35.151"
         android:textColor="@color/black"
-        android:textSize="@dimen/text_medium"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@id/deprem_lng"
         app:layout_constraintTop_toBottomOf="@id/deprem_lokasyon" />
 
-<!--    android:drawableEnd="@drawable/clook_deprem"-->
+    <!--    android:drawableEnd="@drawable/clook_deprem"-->
     <TextView
         android:id="@+id/deprem_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_xlarge"
-
+        android:layout_marginTop="@dimen/margin_large"
         android:gravity="center"
         android:text="2021-09-22"
         android:textColor="@color/black"
-        android:textSize="@dimen/text_medium"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/deprem_lng" />

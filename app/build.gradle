@@ -42,6 +42,7 @@ android {
 dependencies {
 
     implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'androidx.test.ext:junit-ktx:1.1.5'
     def retrofitVersion = '2.9.0'
     def glideVersion = '4.12.0'
     def rxJavaVersion = '2.1.1'
